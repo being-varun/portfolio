@@ -5,24 +5,23 @@ class App extends Component {
     
     constructor(){
             super();
-            this.state={ loginState : false};
+            this.state={ loginState : true};
+            this.toggleSignUpLogIn=this.toggleSignUpLogIn.bind(this);
     }
     toggleSignUpLogIn(){
-        this.setState({loginState:true});
-    }
-    
+        console.log("In toggle"+this.state.loginState);
+        this.setState({loginState:!this.state.loginState});
+    }    
    
-    render() { 
-        console.log("State="+this.loginState);
+    render() {  
+        console.log("State changed to="+this.state.loginState);      
         return(
-        <><input type="button" onclick="toggleSignUpLogIn()" value="Login/Signup" />
-       { console.log("State="+this.loginState)}
-        <div id="01">{this.loginState?login():signup()}</div>
-        </> 
+        <div><button onClick={this.toggleSignUpLogIn}>SIGNUP/LOGIn</button>
+        
+        <div id="01">{this.state.loginState?login():signup()}</div>
+        </div> 
         );
-    }
-
-   
+    }   
 }
 
 export default App;
