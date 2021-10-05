@@ -1,32 +1,28 @@
 import React, { Component } from 'react';
+import login from './login';
+import signup from './signup';
 class App extends Component {
-    render() {
-        return (
-            <div>
-                <table>
-                    <tr>
-                        <td>
-                            Login nId:
-                        </td>
-                        <td>
-                            <input type="text"></input>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td>
-                            Password:
-                        </td>
-                        <td>
-                            <input type="Password"></input>
-                        </td>
-                    </tr>
-                </table>
-
-                <br />
-            </div>
-        )
+    
+    constructor(){
+            super();
+            this.state={ loginState : false};
     }
+    toggleSignUpLogIn(){
+        this.setState({loginState:true});
+    }
+    
+   
+    render() { 
+        console.log("State="+this.loginState);
+        return(
+        <><input type="button" onclick="toggleSignUpLogIn()" value="Login/Signup" />
+       { console.log("State="+this.loginState)}
+        <div id="01">{this.loginState?login():signup()}</div>
+        </> 
+        );
+    }
+
+   
 }
 
 export default App;
