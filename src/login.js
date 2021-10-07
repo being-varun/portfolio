@@ -2,34 +2,32 @@
 const login = () => {
     return (
         <>
-            
-                <table>
-                    <tr>
-                        <td>
-                            Login Id:
-                        </td>
-                        <td>
-                            <input type="text"></input>
-                        </td>
 
-                    </tr>
-                    <tr>
-                        <td>
-                            Password:
-                        </td>
-                        <td>
-                            <input type="Password"></input>
-                        </td>
-                    </tr>
-                    <tr>
+            <table>
+                <tr>
+                    <td>
+                        Login Id:
+                    </td>
+                    <td>
+                        <input type="text"></input>
+                    </td>
 
-                        <button class="btn btn-primary login-btn">Login</button>
+                </tr>
+                <tr>
+                    <td>
+                        Password:
+                    </td>
+                    <td>
+                        <input type="Password"></input>
+                    </td>
+                </tr>
+                <tr>
+                </tr>
+            </table>
 
-                    </tr>
-                </table>
+            <button class="btn btn-primary ">Login</button>
 
-                <br />
-            
+            <br />
 
         </>
     )
