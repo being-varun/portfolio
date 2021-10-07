@@ -1,0 +1,14 @@
+.login-signup-class{
+    border-style:solid;
+    border-color:goldenrod;
+    padding: 20px;
+    display:inline-block ;
+    border-radius: 10px;
+    color:brown; 
+    font-family:cursive;
+    font-style: italic;
+    
+}
+.login-signup-btn{
+    float:right;
+}

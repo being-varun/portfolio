@@ -1,29 +1,37 @@
 
-    const login = () => {
+const login = () => {
     return (
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        Login Id:
-                    </td>
-                    <td>
-                        <input type="text"></input>
-                    </td>
+        <>
+            
+                <table>
+                    <tr>
+                        <td>
+                            Login Id:
+                        </td>
+                        <td>
+                            <input type="text"></input>
+                        </td>
 
-                </tr>
-                <tr>
-                    <td>
-                        Password:
-                    </td>
-                    <td>
-                        <input type="Password"></input>
-                    </td>
-                </tr>
-            </table>
+                    </tr>
+                    <tr>
+                        <td>
+                            Password:
+                        </td>
+                        <td>
+                            <input type="Password"></input>
+                        </td>
+                    </tr>
+                    <tr>
 
-            <br />
-        </div>
+                        <button class="btn btn-primary login-btn">Login</button>
+
+                    </tr>
+                </table>
+
+                <br />
+            
+
+        </>
     )
 }
 

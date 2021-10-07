@@ -1,5 +1,18 @@
+ /*const checkValid=()=>{
+    var pwd=document.getElementById("pwd").value;
+    var confpwd=document.getElementById("conf-pwd").value;
+    if(pwd===confpwd){
+        console.log("match");
+    }else{
+        console.log("not a match");
+    }
+}*/
+
 const signup=() => {
+
+     
         return (
+            <form class="signup-class">
             <table>
                 <tr>
                     <td>
@@ -25,7 +38,7 @@ const signup=() => {
                         Password:
                     </td>
                     <td>
-                        <input type="password" />
+                        <input id="pwd" type="password" />
                     </td>
                 </tr>
                 <tr>
@@ -33,11 +46,20 @@ const signup=() => {
                         Confirm Password:
                     </td>
                     <td>
-                        <input type="password" />
+                        <input  id="conf-pwd"  type="password" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn btn-primary">SignUp</button>
+                    </td>
+                    <td>
+                        <a class="text-primary">Forgot Password</a>
                     </td>
                 </tr>
 
             </table>
+            </form>
         )
     
 }
